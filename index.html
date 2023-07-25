@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-inputs">
+            <div class="single-input">
+                <p class="input-title">DAY</p>
+                <input type="number" id="day-input" placeholder="DD">
+                <p class="wrong-field none" id="empty-day">This field is required</p>
+                <p id="invalid-date" class="wrong-field none">Must be a valid date</p>
+                <p class="wrong-field none" id="invalid-day">Must be a valid day</p>
+            </div>
+            <div class="single-input">
+                <p class="input-title">MONTH</p>
+                <input type="number" id="month-input" placeholder="MM">
+                <p class="wrong-field none" id="empty-month">This field is required</p>
+                <p class="wrong-field none" id="invalid-month">Must be a valid month</p>
+            </div>
+            <div class="single-input">
+                <p class="input-title">YEAR</p>
+                <input type="number" id="year-input" placeholder="YYYY">
+                <p class="wrong-field none" id="empty-year">This field is required</p>
+                <p class="wrong-field none" id="invalid-year">Must be in the past</p>
+            </div>
+            <div id="container-img">
+                <img src="./img/icon-arrow.svg" alt="" class="arrow-img">
+            </div>
+        </div>
+        <div class="results">
+            <h2 class="result-text"><span class="purple-text" id="years-text">- -</span> years</h2>
+            <h2 class="result-text"><span class="purple-text" id="months-text">- -</span> months</h2>
+            <h2 class="result-text"><span class="purple-text" id="days-text">- -</span> days</h2>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
